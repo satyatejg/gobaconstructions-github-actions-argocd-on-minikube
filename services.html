@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Construction Co.</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><h1>Goba Constructions</h1></a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="section-intro">We offer comprehensive construction services tailored to meet your specific needs. Our expertise spans across various sectors, ensuring quality and excellence in every project.</p>
+            
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Residential Construction</h3>
+                    <p>From custom homes to apartment complexes, we deliver high-quality, sustainable residential buildings. Our services include:</p>
+                    <ul class="service-features">
+                        <li>Custom Home Building</li>
+                        <li>Multi-Family Housing</li>
+                        <li>Home Renovations</li>
+                        <li>Green Building Solutions</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Commercial Construction</h3>
+                    <p>We provide design and build services for offices, retail spaces, and mixed-use developments. Our expertise includes:</p>
+                    <ul class="service-features">
+                        <li>Office Buildings</li>
+                        <li>Retail Spaces</li>
+                        <li>Restaurants & Hospitality</li>
+                        <li>Mixed-Use Developments</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Industrial Construction</h3>
+                    <p>Specialized construction services for industrial facilities and warehouses. Our capabilities include:</p>
+                    <ul class="service-features">
+                        <li>Warehouses</li>
+                        <li>Manufacturing Facilities</li>
+                        <li>Distribution Centers</li>
+                        <li>Industrial Renovations</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Project Management</h3>
+                    <p>Comprehensive project management services to ensure successful project delivery:</p>
+                    <ul class="service-features">
+                        <li>Planning & Scheduling</li>
+                        <li>Budget Management</li>
+                        <li>Quality Control</li>
+                        <li>Safety Management</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-cta">
+                <h3>Ready to Start Your Project?</h3>
+                <p>Contact us today to discuss your construction needs and get a free consultation.</p>
+                <a href="contact.html" class="cta-btn">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Goba Constructions | All rights reserved</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-reddit"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        const body = document.body;
+
+        menuToggle.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+            body.classList.toggle('menu-open');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                body.classList.remove('menu-open');
+                menuToggle.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: website
-        image: fedsatya/gobaconstructions-github-actions-argocd-on-minikube:8b7718dbc0a5bdee5bbc38a114bca83f65731cab
+        image: fedsatya/gobaconstructions-github-actions-argocd-on-minikube:2fabf1c24c40790a197311d6781647d4e0527390
         ports:
         - containerPort: 80
